@@ -1,0 +1,283 @@
+*,::before, ::after
+{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body
+{
+    background-color:beige;
+}
+
+/* nav */
+
+header
+{
+    height: 75px;
+    width: 100%;
+}
+
+.logo
+{
+    position: relative;
+    top: 10px;
+    margin-left: 25px;
+    height: 40px;
+}
+
+header h2
+{
+    margin-left: 70px ;
+    font-style: italic;
+    font-family: forte;
+}
+
+header p
+{
+    position: relative;
+    bottom: 8px;
+    margin-left: 25px;
+   
+}
+
+ul
+{
+    display: flex;
+    position: relative;
+    height: auto;
+    width: 300px;
+    margin-left: 1050px;
+    bottom: 45px;
+    
+}
+
+.ul .li
+{
+    display: flex;
+    list-style-type: none;
+    margin: 10px; 
+}
+
+.ul .li a
+{
+    text-decoration: none;
+    color: rgb(90, 89, 89);    
+}
+
+.ul .li a:hover
+{
+    text-decoration: underline;
+    color: rgb(176, 38, 38);
+}
+
+hr
+{
+    margin-top: 20px;
+}
+
+/*  carousel */
+.ros
+{
+    margin: 0;
+    width: 1320px;
+    display: inline-block;
+    display: flex;
+    overflow: hidden;
+   
+}
+ 
+.img1
+{
+    margin: 20px 0px;
+    width: 1320px;
+    height: 300px;
+    flex-shrink: 0;
+    background: url(IMAG/parallax-large-flou.jpg);
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    animation-duration: 15s;
+    animation-name: carousel;
+    animation-iteration-count: infinite;
+
+}
+.img2
+{
+    margin: 20px 25px ;
+    flex-shrink: 0;
+    width: 1320px;
+    height: 300px;
+    background-image: url(./IMAG/ys.jpg);
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    animation-duration: 15s;
+    animation-name: carousel;
+    animation-iteration-count: infinite;
+
+}
+
+@keyframes  carousel 
+{
+    0%
+    {
+        transform: translateX(0);
+    }
+    50%
+    {
+        transform: translateX(-1346px);
+    }
+    100%
+    {
+        transform: translateX(0px);
+    }
+}
+
+
+
+.moi
+{
+    width: 100%;
+    height: 60px;
+    margin-top: 240px;
+    background-color: rgba(0, 0, 0, 0.59);
+}
+
+.toi
+{   
+    display: flex;
+}
+
+.moi p,.moi a
+{
+    color: white;
+    text-decoration: none;
+    padding: 10px 0px 10px 5px;
+    text-align: center;
+}
+
+.moi p
+
+{
+    margin-top: 10px;
+}
+
+.moi a
+{
+    margin-left: auto;
+    margin-right: 20px;
+    border: 1px solid brown;
+    background-color: brown;
+    border-radius: 9px;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+
+/* Troisième partie */
+.voy
+{
+    display: flex;
+    width: 100%;
+    height: auto;
+}
+
+.blog
+{
+    margin: 15px;
+    width: 950px;
+    text-align: justify;
+}
+
+.blog p
+{
+    padding: 8px 0px;
+}
+
+.blog h2
+{
+    position: relative;
+    bottom:36px;
+    margin-left: 60px;
+}
+
+.logo2
+{
+    width: 50px;
+    height: 50px;  
+}
+
+aside
+{
+    margin: 15px;
+    height: 500px;
+    width: 390px;
+    text-align: justify;
+    background-color: dimgray;
+    color: rgb(240, 234, 234);
+
+}
+
+.voi
+{
+    margin: 0px 100px;
+    width: 160px;
+    height: 150px;
+}
+
+aside p, aside h1
+{
+    padding: 20px 7px 0px 0px;
+}
+
+aside h1
+{
+    text-align: center;
+}
+
+.i
+{
+    margin: 25px 1px 15px 3px;
+    width: 65px;
+    height: 60px;
+    cursor: pointer;
+}
+
+
+footer
+{
+    display: flex;
+    height: 200px;
+    margin-left: 10px;
+    margin-top: 50px;
+}
+
+.fot
+{
+    margin: 0px 20px 20px 0px;
+    width: 700px;
+    height: 150px ;
+}
+
+.f2 .f
+{
+    width: 100px;
+    height: 110px; 
+    padding: 20px 3px 0px 0px;
+}
+
+
+
+
+
+.y
+{
+    display: flex;
+}
+
+.oui
+{
+    color: red;
+    padding: 20px 20px 0px 0px;
+}
